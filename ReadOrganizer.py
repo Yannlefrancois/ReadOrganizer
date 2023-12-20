@@ -178,6 +178,8 @@ if __name__=="__main__":
 
 
         last_to_map=[]
+        #loop that selects only the read that havent been mapped 
+        # so we can try to map their reverse complement sequence
         for one_read in all_reads:
             if  not one_read.get_mapping_status():
                 one_read.reverse_complentation()
